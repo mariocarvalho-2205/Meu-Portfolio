@@ -137,3 +137,7 @@ ul li a {
     width: 86px;
     height: 24px; 
 }
+
+#btn-teste {
+    background: 1px solid #00ff00;
+}
