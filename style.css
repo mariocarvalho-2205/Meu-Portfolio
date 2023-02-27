@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&family=Open+Sans:ital,wght@0,400;1,500;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    color: var(--fill-color)
+    color: var(--fill-color);
+    font-family: 'Merriweather', sans-serif;
+    box-sizing: border-box;
+    
     
 }
 
@@ -11,34 +16,124 @@
     --fill-border: #000000;
     --stroke-box: #302F3D;
     --border-img: #00ff00;
+    --btn-item: #CB92B1;
 }
 
+.container {
+    background-color: var(--stroke-box);
+    box-shadow: 5px 5px 5px #181717;
+    border-radius: 20px;
+    width: 348px;
+} 
+
+/* Profile */
 .profile-container {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     height: 100vh;
     background-color: var(--stroke-color);
+}
+ 
+#name-profile {
+    text-shadow: 2px 2px 2px #000000;
+    
 }
 
 #img-profile {
     margin: 32px 110px 0;
     width: 128px;
+    height: 128px;
     border: 2px solid var(--border-img);
     border-radius: 50%;
-    
-
-
 }
+
 #profile-aside {
+    margin: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 348px;
     height: 292px;
-    background-color: var(--stroke-box);
-    border-radius: 20px;
+    
+
 }
 
 #name-profile {
     margin: 30px 76px 0;
+    font-size: 23px;
+   
+}
+
+#subtitle-profile {
+    margin: 10px 110px;
+    font-size: 13px;
+}
+
+/* link Container */
+#link-container {
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+    height: 280px;
     
+}
+
+.aside-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin: 34px;
+
+}
+
+li{
+    
+    list-style: none;
+}
+
+li a img {
+    width: 24px;
+    margin: 0 20px;
+}
+ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* List Buttons */
+
+.list-tech {
+    height: 160px;
+    margin: 30px 40px;
+}
+
+.list-tech h2 {
+    margin: 30px 20px 0;
+    font-size: 20px;
+}
+
+#list-btn {
+    display: flex;
+    margin: 20px;
+    
+}
+.list-btn-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 13px;
+       
+}
+
+.btn-items  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--btn-item);
+    border-radius: 10px;
+    color: #000000;
+    width: 86px;
+    height: 24px; 
 }
