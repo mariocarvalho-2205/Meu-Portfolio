@@ -17,21 +17,30 @@
     --stroke-box: #302F3D;
     --border-img: #00ff00;
     --btn-item: #CB92B1;
+    --shadow-color: #181717;
 }
 
 .container {
     background-color: var(--stroke-box);
-    box-shadow: 5px 5px 5px #181717;
+    box-shadow: 5px 5px 10px var(--shadow-color);
     border-radius: 20px;
     width: 348px;
+    margin: 40px 0 0 40px;
 } 
+
+.container h2 {
+    
+    margin: 30px 0 0 20px;
+    font-size: 20px;
+}
 
 /* Profile */
 .profile-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 100vh;
+    
+    height: 100%;
     background-color: var(--stroke-color);
 }
  
@@ -49,13 +58,10 @@
 }
 
 #profile-aside {
-    margin: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 292px;
-    
-
 }
 
 #name-profile {
@@ -73,7 +79,6 @@
 #link-container {
     display: flex;
     align-items: center;
-    margin: 0 40px;
     height: 280px;
     
 }
@@ -86,12 +91,11 @@
 
 }
 
-li{
-    
+.list-items {
     list-style: none;
 }
 
-li a img {
+li a svg {
     width: 24px;
     margin: 0 20px;
 }
@@ -99,18 +103,13 @@ ul li a {
     display: flex;
     align-items: center;
     text-decoration: none;
+    
 }
 
-/* List Buttons */
+/* List Box */
 
 .list-tech {
     height: 160px;
-    margin: 30px 40px;
-}
-
-.list-tech h2 {
-    margin: 30px 20px 0;
-    font-size: 20px;
 }
 
 #list-btn {
@@ -136,8 +135,43 @@ ul li a {
     color: #000000;
     width: 86px;
     height: 24px; 
+    
 }
 
-#btn-teste {
-    background: 1px solid #00ff00;
+/* Experiencer Box */
+
+#title-experience {
+    margin: 30px 20px;
+    font-size: 20px;
+}
+
+.list-experience{
+    margin: 20px 80px;
+    font-size: 14px;
+    
+}
+
+.exper-items {
+    margin: 0 0px;
+    font-weight: 700;
+}
+
+.ul-exper-subitems {
+    list-style: none;
+    margin: 0 0 12px 0px; 
+}
+
+.exper-subitems {
+    font-size: 12px;
+}
+
+#footer {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--stroke-color);
+}
+
+#main-container {
+    
 }
