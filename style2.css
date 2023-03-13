@@ -26,6 +26,7 @@ body {
 #container-page {
     display: flex;
     justify-content: center;
+    
 }
 
 #container-back {
@@ -41,7 +42,7 @@ body {
     background-color: var(--stroke-box);
     box-shadow: 5px 5px 10px var(--shadow-color);
     border-radius: 20px;
-    width: 348px;
+    width: auto;
     margin: 40px 0 0 40px;
 } 
 
@@ -141,6 +142,7 @@ ul li a {
 
 
 .list-experience{
+    margin-right: 30px;
     padding: 0 0 20px 80px;
     font-size: 14px;
     display: flex;
@@ -170,8 +172,45 @@ ul li a {
 
 
 /* Main */
-#main-box {
+.main-box {
     width: auto;
-    margin: 40px;
+    
     text-align: center;
 }
+
+.container-main {
+    display: flex;
+    background-color: var(--stroke-box);
+    box-shadow: 5px 5px 10px var(--shadow-color);
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: top;
+    width: auto;
+    height: 86px;
+    padding: 30px;
+    margin: 40px 40px 0 60px;
+} 
+
+.container-folder {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.my-folder {
+    max-width: 461px;
+    height: 186px;
+}
+
+.title-box-main {
+    color: greenyellow;
+    font-size: 20px;  
+}
+
+.main-box p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
