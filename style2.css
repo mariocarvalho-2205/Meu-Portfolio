@@ -13,7 +13,7 @@ body {
 
 /* Variaveis */
 :root {
-    --stroke-color: #22212c;
+    --stroke-color: #706f7c;
     --fill-color: #837E9F;
     --fill-border: #000000;
     --stroke-box: #302F3D;
@@ -42,7 +42,6 @@ body {
     background-color: var(--stroke-box);
     box-shadow: 5px 5px 10px var(--shadow-color);
     border-radius: 20px;
-    width: auto;
     margin: 40px 0 0 40px;
 } 
 
@@ -156,41 +155,50 @@ ul li a {
 
 .ul-exper-subitems {
     list-style: none;
-    padding: 0 0 12px 0px; 
+    padding-bottom: 12px; 
 }
 
 .exper-subitems {
     font-size: 12px;
 }
 
-#footer {
-    margin: 40px;
-    display: flex;
-    justify-content: center;
-    background-color: var(--stroke-color);
-}
-
 
 /* Main */
-.main-box {
-    width: auto;
-    
-    text-align: center;
+
+#container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 40px 0 60px;
+    /* padding: 40px 40px 0 60px; */
+    width: 986px;
 }
 
 .container-main {
-    display: flex;
     background-color: var(--stroke-box);
-    box-shadow: 5px 5px 10px var(--shadow-color);
+    box-shadow: 5px 5px 5px var(--shadow-color);
     border-radius: 20px;
-    justify-content: space-between;
-    align-items: top;
-    width: auto;
     height: 86px;
     padding: 30px;
-    margin: 40px 40px 0 60px;
+    
 } 
+.box-projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
 
+.box-projects strong {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.box-projects p {
+    font-weight: 400;
+    font-size: 14px;
+}
 .container-folder {
     display: flex;
     justify-content: space-between;
@@ -199,18 +207,26 @@ ul li a {
 }
 
 .my-folder {
-    max-width: 461px;
+    
     height: 186px;
 }
 
 .title-box-main {
-    color: greenyellow;
-    font-size: 20px;  
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;  
 }
+/*
 
-.main-box p {
-    margin-top: 10px;
-    text-align: justify;
+.title-box-main svg {
+    color: #00ff00;
+    width: 36px;  
+} */
+    
+#footer {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--stroke-color);
 }
-
-
